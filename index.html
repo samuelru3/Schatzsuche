@@ -14,28 +14,24 @@
 
 <body>
 
-    <div id="Frage">
-        <h2>Frage</h2>
-        <div>
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-primary">Primary</button>
-        </div>
-        <div style="padding: 20px;">
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-primary">Primary</button>
-        </div>
+    <div id="Frage" style="display: none;">
+        <h1>Frage</h2>
+            <div>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <div style="padding: 20px;">
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-primary">Primary</button>
+            </div>
     </div>
 
     <div id="code" v-if="displayCode">
-        <h2>code</h2>
-        <div>
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-primary">Primary</button>
-        </div>
-        <div style="padding: 20px;">
-            <button type="button" class="btn btn-primary">Primary</button>
-            <button type="button" class="btn btn-primary">Primary</button>
-        </div>
+        <h1>Code</h2>
+            <div>
+                <input type="number" name="code" id="code">
+                <button type="button" class="btn btn-primary">Primary</button>
+            </div>
     </div>
 
     <script src="https://unpkg.com/vue@next"></script>
