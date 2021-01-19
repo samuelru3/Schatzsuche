@@ -14,8 +14,21 @@
 <body>
     <div id="schatz-app">
 
+
+
+        <div id="code" v-if="displayCode1">
+            <h1>Hinterhof</h2>
+                <div>
+                    <input type="number" name="code1" id="code1" v-model="code1"
+                        style="height: 35px; width: 130px; margin-top: 5px;">
+                    <button type="button" class="btn btn-primary" @click="ueberpruefen1"
+                        style="margin-left: 10px;">Überprüfen</button>
+                </div>
+                <!-- <span style="color: white;">{{schatz.antwort}} 1 </span> -->
+        </div>
+
         <div id="Frage" v-if="displayFrage1">
-            <h1 style="margin-bottom: 15px;">Frage</h2>
+            <h1 style="margin-bottom: 15px;">Geburtstag</h2>
                 <div>
                     <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
                     <button type="button" class="btn btn-primary">Primary</button>
@@ -27,14 +40,156 @@
         </div>
 
         <div id="code" v-if="displayCode1">
-            <h1>Code</h2>
+            <h1>Hirsch</h2>
                 <div>
                     <input type="number" name="code1" id="code1" v-model="code1"
                         style="height: 35px; width: 130px; margin-top: 5px;">
                     <button type="button" class="btn btn-primary" @click="ueberpruefen1"
                         style="margin-left: 10px;">Überprüfen</button>
                 </div>
-                <!-- <span style="color: white;">{{schatz.antwort}} 1 </span> -->
+        </div>
+
+        <div id="Frage" v-if="displayFrage1">
+            <h1 style="margin-bottom: 15px;">cousins</h2>
+                <div>
+                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+                <div style="padding: 10px;">
+                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+        </div>
+
+        <div id="code" v-if="displayCode1">
+            <h1>Klettergerüst</h2>
+                <div>
+                    <input type="number" name="code1" id="code1" v-model="code1"
+                        style="height: 35px; width: 130px; margin-top: 5px;">
+                    <button type="button" class="btn btn-primary" @click="ueberpruefen1"
+                        style="margin-left: 10px;">Überprüfen</button>
+                </div>
+        </div>
+
+        <div id="Frage" v-if="displayFrage1">
+            <h1 style="margin-bottom: 15px;">geburtsort</h2>
+                <div>
+                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+                <div style="padding: 10px;">
+                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+        </div>
+        <div id="code" v-if="displayCode1">
+            <h1>Kiosk</h2>
+                <div>
+                    <input type="number" name="code1" id="code1" v-model="code1"
+                        style="height: 35px; width: 130px; margin-top: 5px;">
+                    <button type="button" class="btn btn-primary" @click="ueberpruefen1"
+                        style="margin-left: 10px;">Überprüfen</button>
+                </div>
+        </div>
+
+        <div id="Frage" v-if="displayFrage1">
+            <h1 style="margin-bottom: 15px;">Handy</h2>
+                <div>
+                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+                <div style="padding: 10px;">
+                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+        </div>
+
+        <div id="code" v-if="displayCode1">
+            <h1>Tigerköpfe</h2>
+                <div>
+                    <input type="number" name="code1" id="code1" v-model="code1"
+                        style="height: 35px; width: 130px; margin-top: 5px;">
+                    <button type="button" class="btn btn-primary" @click="ueberpruefen1"
+                        style="margin-left: 10px;">Überprüfen</button>
+                </div>
+        </div>
+
+        <div id="Frage" v-if="displayFrage1">
+            <h1 style="margin-bottom: 15px;">Plakat</h2>
+                <div>
+                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+                <div style="padding: 10px;">
+                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+        </div>
+
+        <div id="code" v-if="displayCode1">
+            <h1>Baum</h2>
+                <div>
+                    <input type="number" name="code1" id="code1" v-model="code1"
+                        style="height: 35px; width: 130px; margin-top: 5px;">
+                    <button type="button" class="btn btn-primary" @click="ueberpruefen1"
+                        style="margin-left: 10px;">Überprüfen</button>
+                </div>
+        </div>
+
+        <div id="Frage" v-if="displayFrage1">
+            <h1 style="margin-bottom: 15px;">zeitung</h2>
+                <div>
+                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+                <div style="padding: 10px;">
+                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+        </div>
+
+        <div id="code" v-if="displayCode1">
+            <h1>dom pedro</h2>
+                <div>
+                    <input type="number" name="code1" id="code1" v-model="code1"
+                        style="height: 35px; width: 130px; margin-top: 5px;">
+                    <button type="button" class="btn btn-primary" @click="ueberpruefen1"
+                        style="margin-left: 10px;">Überprüfen</button>
+                </div>
+        </div>
+
+        <div id="Frage" v-if="displayFrage1">
+            <h1 style="margin-bottom: 15px;">Lilli</h2>
+                <div>
+                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+                <div style="padding: 10px;">
+                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+        </div>
+
+        <div id="code" v-if="displayCode1">
+            <h1>anderer hof</h2>
+                <div>
+                    <input type="number" name="code1" id="code1" v-model="code1"
+                        style="height: 35px; width: 130px; margin-top: 5px;">
+                    <button type="button" class="btn btn-primary" @click="ueberpruefen1"
+                        style="margin-left: 10px;">Überprüfen</button>
+                </div>
+        </div>
+
+        <div id="Frage" v-if="displayFrage1">
+            <h1 style="margin-bottom: 15px;">alter lilli</h2>
+                <div>
+                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
+                <div style="padding: 10px;">
+                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                </div>
         </div>
 
         <script src="https://unpkg.com/vue@next"></script>
