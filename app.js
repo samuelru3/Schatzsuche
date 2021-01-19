@@ -2,7 +2,8 @@ const SchatzApp = {
     data() {
         return {
             // --- Variablen zum Sichtbarmachen ---
-            displayCode: true
+            displayCode1: true,
+            displayFrage1: true
 
         }
     },

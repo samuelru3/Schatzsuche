@@ -14,23 +14,25 @@
 <body>
     <div id="schatz-app">
 
-        <div id="Frage" style="display: none;">
-            <h1>Frage</h2>
+        <div id="Frage" v-if="displayFrage1">
+            <h1 style="margin-bottom: 15px;">Frage</h2>
                 <div>
-                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
                     <button type="button" class="btn btn-primary">Primary</button>
                 </div>
-                <div style="padding: 20px;">
-                    <button type="button" class="btn btn-primary">Primary</button>
+                <div style="padding: 10px;">
+                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Primary</button>
                     <button type="button" class="btn btn-primary">Primary</button>
                 </div>
         </div>
 
-        <div id="code" v-if="displayCode">
+        <div id="code" v-if="displayCode1">
             <h1>Code</h2>
                 <div>
-                    <input type="number" name="code1" id="code1" v-model="code1">
-                    <button type="button" class="btn btn-primary" @click="ueberpruefen1">Überprüfen</button>
+                    <input type="number" name="code1" id="code1" v-model="code1"
+                        style="height: 35px; width: 130px; margin-top: 5px;">
+                    <button type="button" class="btn btn-primary" @click="ueberpruefen1"
+                        style="margin-left: 10px;">Überprüfen</button>
                 </div>
                 <!-- <span style="color: white;">{{schatz.antwort}} 1 </span> -->
         </div>
