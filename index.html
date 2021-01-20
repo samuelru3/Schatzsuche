@@ -100,7 +100,7 @@
         </div>
 
         <div id="Frage" v-if="Panel8">
-            <h1 style="margin-bottom: 15px;">Von Welcher Marke war<br>Samuels erstes Smartphone?</h1>
+            <h1 style="margin-bottom: 15px;">Von welcher Marke war<br>Samuels erstes Smartphone?</h1>
             <div>
                 <button type="button" class="btn btn-primary" @click="Frage4"
                     style="margin-right: 10px;">Microsoft</button>
@@ -208,7 +208,29 @@
         <div id="ende" v-if="endPanel1">
             <h1>Fast Gesschafft!</h1>
             <h2>Nun Bekommst du den Finalen Hinweis zum Schatz!</h2>
-            <button type="button" class="btn btn-primary" @click="ende" style="margin-left: 10px;">Versatanden!</button>
+            <button type="button" class="btn btn-primary" @click="ende1"
+                style="margin-left: 10px;">Versatanden!</button>
+        </div>
+
+        <div id="ende" v-if="endPanel2">
+            <h1>Hier musst du suchen!</h1>
+            <div>
+                <img src="schatzsucheSchatz.PNG" alt="baum" width="600" style="margin:15px ;">
+            </div>
+            <button type="button" class="btn btn-primary" @click="ende2" style="margin-left: 10px;">Gefunden!</button>
+        </div>
+
+        <div id="ende" v-if="endPanel3">
+            <h1>Rechne nun alle Codes zusammen <br> um den finalen Code zu erhalten!</h1>
+            <h2>Erster Hof: 28</h2>
+            <h2>Hubertusbrunnen: 5 </h2>
+            <h2>Grünwaldpark: 35 </h2>
+            <h2>Hausnummer Kiosk: 261 </h2>
+            <h2>Tigerköpfe: 2 </h2>
+            <h2>Baum: 16</h2>
+            <h2>Schneeflocken: 7 </h2>
+            <h2>Klettergerüst: 21 </h2>
+            <button type="button" class="btn btn-primary" @click="ende3" style="margin-left: 10px;">Nochmal</button>
         </div>
 
 

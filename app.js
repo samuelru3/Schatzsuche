@@ -20,25 +20,30 @@ const SchatzApp = {
             Panel15: false,
             Panel16: false,
             endPanel1: false,
+            endPanel2: false,
+            endPanel3: false,
 
-            start1: true,
-            Panel1: true,
-            Panel2: true,
-            Panel3: true,
-            Panel4: true,
-            Panel5: true,
-            Panel6: true,
-            Panel7: true,
-            Panel8: true,
-            Panel9: true,
-            Panel10: true,
-            Panel11: true,
-            Panel12: true,
-            Panel13: true,
-            Panel14: true,
-            Panel15: true,
-            Panel16: true,
-            endPanel1: true,
+            // start1: true,
+            // Panel1: true,
+            // Panel2: true,
+            // Panel3: true,
+            // Panel4: true,
+            // Panel5: true,
+            // Panel6: true,
+            // Panel7: true,
+            // Panel8: true,
+            // Panel9: true,
+            // Panel10: true,
+            // Panel11: true,
+            // Panel12: true,
+            // Panel13: true,
+            // Panel14: true,
+            // Panel15: true,
+            // Panel16: true,
+            // endPanel1: true,
+            // endPanel2: true,
+            // endPanel3: true,
+
         }
     },
 
@@ -49,8 +54,8 @@ const SchatzApp = {
         },
 
         ueberpruefen1() {
-            if (this.code1 == 1) {
-                console.log("1");
+            if (this.code1 == 28) {
+                console.log("28");
                 this.Panel
                 this.Panel1 = false;
                 this.Panel2 = true;
@@ -81,8 +86,8 @@ const SchatzApp = {
         },
 
         ueberpruefen3() {
-            if (this.code3 == 1) {
-                console.log("1");
+            if (this.code3 == 35) {
+                console.log("35");
                 this.Panel5 = false;
                 this.Panel6 = true;
             } else {
@@ -126,8 +131,8 @@ const SchatzApp = {
         },
 
         ueberpruefen6() {
-            if (this.code6 == 1) {
-                console.log("1");
+            if (this.code6 == 16) {
+                console.log("16");
                 this.Panel11 = false;
                 this.Panel12 = true;
             } else {
@@ -156,8 +161,8 @@ const SchatzApp = {
         },
 
         ueberpruefen8() {
-            if (this.code8 == 1) {
-                console.log("1");
+            if (this.code8 == 21) {
+                console.log("21");
                 this.Panel15 = false;
                 this.Panel16 = true;
             } else {
@@ -170,11 +175,20 @@ const SchatzApp = {
             this.endPanel1 = true;
         },
 
-        ende() {
+        ende1() {
             this.endPanel1 = false;
             this.endPanel2 = true;
         },
 
+        ende2() {
+            this.endPanel2 = false;
+            this.endPanel3 = true;
+        },
+
+        ende3() {
+            this.endPanel3 = false;
+            this.endPanel1 = true;
+        },
     }
 };
 Vue.createApp(SchatzApp).mount('#schatz-app');
