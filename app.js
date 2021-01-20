@@ -41,8 +41,8 @@ const SchatzApp = {
         },
 
         ueberpruefen2() {
-            if (this.code1 == 1) {
-                console.log("1");
+            if (this.code2 == 5) {
+                console.log("5");
                 this.Panel3 = false;
                 this.Panel4 = true;
             } else {
@@ -56,7 +56,7 @@ const SchatzApp = {
         },
 
         ueberpruefen3() {
-            if (this.code1 == 1) {
+            if (this.code3 == 1) {
                 console.log("1");
                 this.Panel5 = false;
                 this.Panel6 = true;
@@ -71,8 +71,8 @@ const SchatzApp = {
         },
 
         ueberpruefen4() {
-            if (this.code1 == 1) {
-                console.log("1");
+            if (this.code4 == 216) {
+                console.log("216");
                 this.Panel7 = false;
                 this.Panel8 = true;
             } else {
@@ -86,8 +86,8 @@ const SchatzApp = {
         },
 
         ueberpruefen5() {
-            if (this.code1 == 1) {
-                console.log("1");
+            if (this.code5 == 2) {
+                console.log("2");
                 this.Panel9 = false;
                 this.Panel10 = true;
             } else {
@@ -101,7 +101,7 @@ const SchatzApp = {
         },
 
         ueberpruefen6() {
-            if (this.code1 == 1) {
+            if (this.code6 == 1) {
                 console.log("1");
                 this.Panel11 = false;
                 this.Panel12 = true;
@@ -116,8 +116,8 @@ const SchatzApp = {
         },
 
         ueberpruefen7() {
-            if (this.code1 == 1) {
-                console.log("1");
+            if (this.code7 == 7) {
+                console.log("7");
                 this.Panel13 = false;
                 this.Panel14 = true;
             } else {
@@ -131,7 +131,7 @@ const SchatzApp = {
         },
 
         ueberpruefen8() {
-            if (this.code1 == 1) {
+            if (this.code8 == 1) {
                 console.log("1");
                 this.Panel15 = false;
                 this.Panel16 = true;
