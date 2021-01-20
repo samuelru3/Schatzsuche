@@ -2,7 +2,8 @@ const SchatzApp = {
     data() {
         return {
             // --- Variablen zum Sichtbarmachen ---
-            Panel1: true,
+            start1: true,
+            Panel1: false,
             Panel2: false,
             Panel3: false,
             Panel4: false,
@@ -23,6 +24,11 @@ const SchatzApp = {
     },
 
     methods: {
+        start() {
+            this.start1 = false;
+            this.Panel1 = true;
+        },
+
         ueberpruefen1() {
             if (this.code1 == 1) {
                 console.log("1");

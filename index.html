@@ -14,183 +14,191 @@
 <body>
     <div id="schatz-app">
 
+        <div id="start" v-if="start1">
+            <h1>Schatzsuche!</h1>
+            <h2>Um den Schatz zu finden musst du Aufgaben Lösen und Hinweise finden!</h2>
+            <h3>Bei einigen Aufgaben musst du einen Zahlencode eingeben. </h3>
+            <h3>Bei anderen musst du die richtige Lösung einer Frage anklicken um weiter zu kommen.</h3>
+            <button type="button" class="btn btn-primary" @click="start"
+                style="margin-left: 10px;">Versatanden!</button>
+        </div>
+
         <div id="code" v-if="Panel1">
-            <h1>Gebe den Code ein der sich an<br>der Markierten Position befindet:</h2>
-                <div>
-                    <input type="number" name="code1" id="code1" v-model="code1"
-                        style="height: 35px; width: 130px; margin-top: 5px;">
-                    <button type="button" class="btn btn-primary" @click="ueberpruefen1"
-                        style="margin-left: 10px;">Überprüfen</button>
-                </div>
-                <!-- <span style="color: white;">{{schatz.antwort}} 1 </span> -->
+            <h1>Gebe den Code ein der sich an<br>der Markierten Position befindet:</h1>
+            <div>
+                <input type="number" name="code1" id="code1" v-model="code1"
+                    style="height: 35px; width: 130px; margin-top: 5px;">
+                <button type="button" class="btn btn-primary" @click="ueberpruefen1"
+                    style="margin-left: 10px;">Überprüfen</button>
+            </div>
+            <!-- <span style="color: white;">{{schatz.antwort}} 1 </span> -->
         </div>
 
         <div id="Frage" v-if="Panel2">
-            <h1 style="margin-bottom: 15px;">Wann hat Samuel Geburtstag?</h2>
-                <div>
-                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">10.8.2002</button>
-                    <button type="button" class="btn btn-primary" @click="Frage1">8.6.2002</button>
-                </div>
-                <div style="padding: 10px;">
-                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">6.8.2002</button>
-                    <button type="button" class="btn btn-primary">28.6.2002</button>
-                </div>
+            <h1 style="margin-bottom: 15px;">Wann hat Samuel Geburtstag?</h1>
+            <div>
+                <button type="button" class="btn btn-primary" style="margin-right: 10px;">10.8.2002</button>
+                <button type="button" class="btn btn-primary" @click="Frage1">8.6.2002</button>
+            </div>
+            <div style="padding: 10px;">
+                <button type="button" class="btn btn-primary" style="margin-right: 10px;">6.8.2002</button>
+                <button type="button" class="btn btn-primary">28.6.2002</button>
+            </div>
         </div>
 
         <div id="code" v-if="Panel3">
-            <h1>Wieviele schwarze Figuren befinden sich am Hubertusbrunnen?</h2>
-                <div>
-                    <input type="number" name="code2" id="code2" v-model="code2"
-                        style="height: 35px; width: 130px; margin-top: 5px;">
-                    <button type="button" class="btn btn-primary" @click="ueberpruefen2"
-                        style="margin-left: 10px;">Überprüfen</button>
-                </div>
+            <h1>Wieviele schwarze Figuren befinden sich am Hubertusbrunnen?</h1>
+            <div>
+                <input type="number" name="code2" id="code2" v-model="code2"
+                    style="height: 35px; width: 130px; margin-top: 5px;">
+                <button type="button" class="btn btn-primary" @click="ueberpruefen2"
+                    style="margin-left: 10px;">Überprüfen</button>
+            </div>
         </div>
 
         <div id="Frage" v-if="Panel4">
-            <h1 style="margin-bottom: 15px;">Wieviele Cousins und Cousinen hat Samuel?</h2>
-                <div>
-                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Ein</button>
-                    <button type="button" class="btn btn-primary" @click="Frage2">Zwei</button>
-                </div>
-                <div style="padding: 10px;">
-                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Drei</button>
-                    <button type="button" class="btn btn-primary">Vier</button>
-                </div>
+            <h1 style="margin-bottom: 15px;">Wieviele Cousins und Cousinen hat Samuel?</h1>
+            <div>
+                <button type="button" class="btn btn-primary" style="margin-right: 10px;">Ein</button>
+                <button type="button" class="btn btn-primary" @click="Frage2">Zwei</button>
+            </div>
+            <div style="padding: 10px;">
+                <button type="button" class="btn btn-primary" style="margin-right: 10px;">Drei</button>
+                <button type="button" class="btn btn-primary">Vier</button>
+            </div>
         </div>
 
         <div id="code" v-if="Panel5">
-            <h1>Gebe den Code ein den du beim Großen Klettergerüst im Grünwaldpark findest!</h2>
-                <div>
-                    <input type="number" name="code3" id="code3" v-model="code3"
-                        style="height: 35px; width: 130px; margin-top: 5px;">
-                    <button type="button" class="btn btn-primary" @click="ueberpruefen3"
-                        style="margin-left: 10px;">Überprüfen</button>
-                </div>
+            <h1>Gebe den Code ein den du beim Großen Klettergerüst im Grünwaldpark findest!</h1>
+            <div>
+                <input type="number" name="code3" id="code3" v-model="code3"
+                    style="height: 35px; width: 130px; margin-top: 5px;">
+                <button type="button" class="btn btn-primary" @click="ueberpruefen3"
+                    style="margin-left: 10px;">Überprüfen</button>
+            </div>
         </div>
 
         <div id="Frage" v-if="Panel6">
-            <h1 style="margin-bottom: 15px;">Wo wurde Samuel Geboren?</h2>
-                <div>
-                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Zu Hause</button>
-                    <button type="button" class="btn btn-primary">Dritter-Orden</button>
-                </div>
-                <div style="padding: 10px;">
-                    <button type="button" class="btn btn-primary"
-                        style="margin-right: 10px;">Rot-Kreuz-Krankenhaus</button>
-                    <button type="button" class="btn btn-primary" @click="Frage3">Frauenklinik</button>
-                </div>
+            <h1 style="margin-bottom: 15px;">Wo wurde Samuel Geboren?</h1>
+            <div>
+                <button type="button" class="btn btn-primary" style="margin-right: 10px;">Zu Hause</button>
+                <button type="button" class="btn btn-primary">Dritter-Orden</button>
+            </div>
+            <div style="padding: 10px;">
+                <button type="button" class="btn btn-primary" style="margin-right: 10px;">Rot-Kreuz-Krankenhaus</button>
+                <button type="button" class="btn btn-primary" @click="Frage3">Frauenklinik</button>
+            </div>
         </div>
         <div id="code" v-if="Panel7">
-            <h1>Gebe die Hausnummer ein die an der Markierten Position zu finden ist!</h2>
-                <div>
-                    <input type="number" name="code4" id="code4" v-model="code4"
-                        style="height: 35px; width: 130px; margin-top: 5px;">
-                    <button type="button" class="btn btn-primary" @click="ueberpruefen4"
-                        style="margin-left: 10px;">Überprüfen</button>
-                </div>
+            <h1>Gebe die Hausnummer ein die an der Markierten Position zu finden ist!</h1>
+            <div>
+                <input type="number" name="code4" id="code4" v-model="code4"
+                    style="height: 35px; width: 130px; margin-top: 5px;">
+                <button type="button" class="btn btn-primary" @click="ueberpruefen4"
+                    style="margin-left: 10px;">Überprüfen</button>
+            </div>
         </div>
 
         <div id="Frage" v-if="Panel8">
-            <h1 style="margin-bottom: 15px;">Von Welcher Marke war<br>Samuels erstes Smartphone?</h2>
-                <div>
-                    <button type="button" class="btn btn-primary" @click="Frage4"
-                        style="margin-right: 10px;">Microsoft</button>
-                    <button type="button" class="btn btn-primary">Apple</button>
-                </div>
-                <div style="padding: 10px;">
-                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Samsung</button>
-                    <button type="button" class="btn btn-primary">Sony</button>
-                </div>
+            <h1 style="margin-bottom: 15px;">Von Welcher Marke war<br>Samuels erstes Smartphone?</h1>
+            <div>
+                <button type="button" class="btn btn-primary" @click="Frage4"
+                    style="margin-right: 10px;">Microsoft</button>
+                <button type="button" class="btn btn-primary">Apple</button>
+            </div>
+            <div style="padding: 10px;">
+                <button type="button" class="btn btn-primary" style="margin-right: 10px;">Samsung</button>
+                <button type="button" class="btn btn-primary">Sony</button>
+            </div>
         </div>
 
         <div id="code" v-if="Panel9">
-            <h1>Wieviele Tigerköpfe Befinden sich auf der Ger</h2>
-                <div>
-                    <input type="number" name="code5" id="code5" v-model="code5"
-                        style="height: 35px; width: 130px; margin-top: 5px;">
-                    <button type="button" class="btn btn-primary" @click="ueberpruefen5"
-                        style="margin-left: 10px;">Überprüfen</button>
-                </div>
+            <h1>Wieviele Tigerköpfe Befinden sich auf der Ger</h1>
+            <div>
+                <input type="number" name="code5" id="code5" v-model="code5"
+                    style="height: 35px; width: 130px; margin-top: 5px;">
+                <button type="button" class="btn btn-primary" @click="ueberpruefen5"
+                    style="margin-left: 10px;">Überprüfen</button>
+            </div>
         </div>
 
         <div id="Frage" v-if="Panel10">
-            <h1 style="margin-bottom: 15px;">Was hat Samuel für ein Plakat in seinem Zimmer hängen?</h2>
-                <div>
-                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Auto</button>
-                    <button type="button" class="btn btn-primary" @click="Frage5">FC Bayern</button>
-                </div>
-                <div style="padding: 10px;">
-                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">BMW</button>
-                    <button type="button" class="btn btn-primary">Keins</button>
-                </div>
+            <h1 style="margin-bottom: 15px;">Was hat Samuel für ein Plakat in seinem Zimmer hängen?</h1>
+            <div>
+                <button type="button" class="btn btn-primary" style="margin-right: 10px;">Auto</button>
+                <button type="button" class="btn btn-primary" @click="Frage5">FC Bayern</button>
+            </div>
+            <div style="padding: 10px;">
+                <button type="button" class="btn btn-primary" style="margin-right: 10px;">BMW</button>
+                <button type="button" class="btn btn-primary">Keins</button>
+            </div>
         </div>
 
         <div id="code" v-if="Panel11">
-            <h1>Baum</h2>
-                <div>
-                    <input type="number" name="code6" id="code6" v-model="code6"
-                        style="height: 35px; width: 130px; margin-top: 5px;">
-                    <button type="button" class="btn btn-primary" @click="ueberpruefen6"
-                        style="margin-left: 10px;">Überprüfen</button>
-                </div>
+            <h1>Baum</h1>
+            <div>
+                <input type="number" name="code6" id="code6" v-model="code6"
+                    style="height: 35px; width: 130px; margin-top: 5px;">
+                <button type="button" class="btn btn-primary" @click="ueberpruefen6"
+                    style="margin-left: 10px;">Überprüfen</button>
+            </div>
         </div>
 
         <div id="Frage" v-if="Panel12">
-            <h1 style="margin-bottom: 15px;">Wie hieß Samuels Erste Geschäftsidee <br> die verwirklicht wurde?</h2>
-                <div>
-                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Samuels Zeitung</button>
-                    <button type="button" class="btn btn-primary">Samuels Schneeballverkauf</button>
-                </div>
-                <div style="padding: 10px;">
-                    <button type="button" class="btn btn-primary" @click="Frage6"
-                        style="margin-right: 10px;">Schlumpfi-Zeitung</button>
-                    <button type="button" class="btn btn-primary">Selbstgebaute Pfeil und Bogen</button>
-                </div>
+            <h1 style="margin-bottom: 15px;">Wie hieß Samuels Erste Geschäftsidee <br> die verwirklicht wurde?</h1>
+            <div>
+                <button type="button" class="btn btn-primary" style="margin-right: 10px;">Samuels Zeitung</button>
+                <button type="button" class="btn btn-primary">Samuels Schneeballverkauf</button>
+            </div>
+            <div style="padding: 10px;">
+                <button type="button" class="btn btn-primary" @click="Frage6"
+                    style="margin-right: 10px;">Schlumpfi-Zeitung</button>
+                <button type="button" class="btn btn-primary">Selbstgebaute Pfeil und Bogen</button>
+            </div>
         </div>
 
         <div id="code" v-if="Panel13">
-            <h1>dom pedro</h2>
-                <div>
-                    <input type="number" name="code7" id="code7" v-model="code7"
-                        style="height: 35px; width: 130px; margin-top: 5px;">
-                    <button type="button" class="btn btn-primary" @click="ueberpruefen7"
-                        style="margin-left: 10px;">Überprüfen</button>
-                </div>
+            <h1>dom pedro</h1>
+            <div>
+                <input type="number" name="code7" id="code7" v-model="code7"
+                    style="height: 35px; width: 130px; margin-top: 5px;">
+                <button type="button" class="btn btn-primary" @click="ueberpruefen7"
+                    style="margin-left: 10px;">Überprüfen</button>
+            </div>
         </div>
 
         <div id="Frage" v-if="Panel14">
-            <h1 style="margin-bottom: 15px;">'Wie Schreibt man den Namen meiner Schwester?'</h2>
-                <div>
-                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Lilly</button>
-                    <button type="button" class="btn btn-primary" @click="Frage7">Lilli</button>
-                </div>
-                <div style="padding: 10px;">
-                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">Lily</button>
-                    <button type="button" class="btn btn-primary">Lili</button>
-                </div>
+            <h1 style="margin-bottom: 15px;">'Wie Schreibt man den Namen meiner Schwester?'</h1>
+            <div>
+                <button type="button" class="btn btn-primary" style="margin-right: 10px;">Lilly</button>
+                <button type="button" class="btn btn-primary" @click="Frage7">Lilli</button>
+            </div>
+            <div style="padding: 10px;">
+                <button type="button" class="btn btn-primary" style="margin-right: 10px;">Lily</button>
+                <button type="button" class="btn btn-primary">Lili</button>
+            </div>
         </div>
 
         <div id="code" v-if="Panel15">
-            <h1>anderer hof</h2>
-                <div>
-                    <input type="number" name="code8" id="code8" v-model="code8"
-                        style="height: 35px; width: 130px; margin-top: 5px;">
-                    <button type="button" class="btn btn-primary" @click="ueberpruefen8"
-                        style="margin-left: 10px;">Überprüfen</button>
-                </div>
+            <h1>anderer hof</h1>
+            <div>
+                <input type="number" name="code8" id="code8" v-model="code8"
+                    style="height: 35px; width: 130px; margin-top: 5px;">
+                <button type="button" class="btn btn-primary" @click="ueberpruefen8"
+                    style="margin-left: 10px;">Überprüfen</button>
+            </div>
         </div>
 
         <div id="Frage" v-if="Panel16">
-            <h1 style="margin-bottom: 15px;">Wie Alt ist Lilli?</h2>
-                <div>
-                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">6</button>
-                    <button type="button" class="btn btn-primary" @click="Frage8">7</button>
-                </div>
-                <div style="padding: 10px;">
-                    <button type="button" class="btn btn-primary" style="margin-right: 10px;">8</button>
-                    <button type="button" class="btn btn-primary">9</button>
-                </div>
+            <h1 style="margin-bottom: 15px;">Wie Alt ist Lilli?</h1>
+            <div>
+                <button type="button" class="btn btn-primary" style="margin-right: 10px;">6</button>
+                <button type="button" class="btn btn-primary" @click="Frage8">7</button>
+            </div>
+            <div style="padding: 10px;">
+                <button type="button" class="btn btn-primary" style="margin-right: 10px;">8</button>
+                <button type="button" class="btn btn-primary">9</button>
+            </div>
         </div>
 
         <script src="https://unpkg.com/vue@next"></script>
