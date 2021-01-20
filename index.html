@@ -113,7 +113,7 @@
         </div>
 
         <div id="code" v-if="Panel9">
-            <h1>Wieviele Tigerköpfe Befinden sich auf der Ger</h1>
+            <h1>Wieviele Tigerköpfe Befinden sich auf der Gerner-Brücke?</h1>
             <div>
                 <input type="number" name="code5" id="code5" v-model="code5"
                     style="height: 35px; width: 130px; margin-top: 5px;">
@@ -135,7 +135,8 @@
         </div>
 
         <div id="code" v-if="Panel11">
-            <h1>Baum</h1>
+            <h1>Suche hier nach dem nächstem Code!</h1>
+            <img src="schatzsuche baum.PNG" alt="baum" width="600" style="margin:15px ;">
             <div>
                 <input type="number" name="code6" id="code6" v-model="code6"
                     style="height: 35px; width: 130px; margin-top: 5px;">
@@ -158,7 +159,8 @@
         </div>
 
         <div id="code" v-if="Panel13">
-            <h1>dom pedro</h1>
+            <h1>Zähle am rechten Teil der Nordseite die Schneeflocken!</h1>
+            <img src="schatzsucheSchule.PNG" alt="baum" width="800" style="margin:15px ;">
             <div>
                 <input type="number" name="code7" id="code7" v-model="code7"
                     style="height: 35px; width: 130px; margin-top: 5px;">
@@ -168,7 +170,7 @@
         </div>
 
         <div id="Frage" v-if="Panel14">
-            <h1 style="margin-bottom: 15px;">'Wie Schreibt man den Namen meiner Schwester?'</h1>
+            <h1 style="margin-bottom: 15px;">Wie Schreibt man den Namen meiner Schwester?</h1>
             <div>
                 <button type="button" class="btn btn-primary" style="margin-right: 10px;">Lilly</button>
                 <button type="button" class="btn btn-primary" @click="Frage7">Lilli</button>
@@ -180,7 +182,9 @@
         </div>
 
         <div id="code" v-if="Panel15">
-            <h1>anderer hof</h1>
+            <h1>Suche hier auf einem Klettergerüst!</h1>
+            <img src="schatzsucheHof.PNG" alt="baum" height="450" style="margin:15px ;">
+
             <div>
                 <input type="number" name="code8" id="code8" v-model="code8"
                     style="height: 35px; width: 130px; margin-top: 5px;">
@@ -200,6 +204,13 @@
                 <button type="button" class="btn btn-primary">9</button>
             </div>
         </div>
+
+        <div id="ende" v-if="endPanel1">
+            <h1>Fast Gesschafft!</h1>
+            <h2>Nun Bekommst du den Finalen Hinweis zum Schatz!</h2>
+            <button type="button" class="btn btn-primary" @click="ende" style="margin-left: 10px;">Versatanden!</button>
+        </div>
+
 
         <script src="https://unpkg.com/vue@next"></script>
         <script src="app.js"></script>

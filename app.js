@@ -19,7 +19,26 @@ const SchatzApp = {
             Panel14: false,
             Panel15: false,
             Panel16: false,
+            endPanel1: false,
 
+            start1: true,
+            Panel1: true,
+            Panel2: true,
+            Panel3: true,
+            Panel4: true,
+            Panel5: true,
+            Panel6: true,
+            Panel7: true,
+            Panel8: true,
+            Panel9: true,
+            Panel10: true,
+            Panel11: true,
+            Panel12: true,
+            Panel13: true,
+            Panel14: true,
+            Panel15: true,
+            Panel16: true,
+            endPanel1: true,
         }
     },
 
@@ -148,7 +167,12 @@ const SchatzApp = {
 
         Frage8() {
             this.Panel16 = false;
-            this.Panel17 = true;
+            this.endPanel1 = true;
+        },
+
+        ende() {
+            this.endPanel1 = false;
+            this.endPanel2 = true;
         },
 
     }
