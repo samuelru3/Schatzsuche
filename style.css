@@ -4,14 +4,9 @@ body{
     text-align: center;
 }
 
-h1{
+h1,h2,h6{
     color: white;
 }
-
-h2{
-    color: white;
-}
-
 h3{
-    color: white;
+    color: wheat;
 }

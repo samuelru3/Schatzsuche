@@ -24,13 +24,16 @@
         </div>
 
         <div id="code" v-if="Panel1">
-            <h1>Gebe den Code ein der sich an<br>der Markierten Position befindet:</h1>
+            <h1>Suche bei der umkreisten Stelle nach einem Code!</h1>
+            <img src="schatzsucheErsterHof.PNG" alt="hof" width="600" style="margin:15px ;">
+
             <div>
-                <input type="number" name="code1" id="code1" v-model="code1"
+                <input type="number" name="code1" id="code1" v-model="code1" onkeypress="return ueberpruefen1()"
                     style="height: 35px; width: 130px; margin-top: 5px;">
                 <button type="button" class="btn btn-primary" @click="ueberpruefen1"
                     style="margin-left: 10px;">Überprüfen</button>
             </div>
+            <h6>Er könnte auch vergraben sein</h6>
             <!-- <span style="color: white;">{{schatz.antwort}} 1 </span> -->
         </div>
 
@@ -90,7 +93,9 @@
             </div>
         </div>
         <div id="code" v-if="Panel7">
-            <h1>Gebe die Hausnummer ein die an der Markierten Position zu finden ist!</h1>
+            <h1>Gebe die Hausnummer ein die an der <br> Markierten Position zu finden ist!</h1>
+            <img src="schatzsucheKiosk.PNG" alt="hof" width="600" style="margin:15px ;">
+
             <div>
                 <input type="number" name="code4" id="code4" v-model="code4"
                     style="height: 35px; width: 130px; margin-top: 5px;">
@@ -113,7 +118,7 @@
         </div>
 
         <div id="code" v-if="Panel9">
-            <h1>Wieviele Tigerköpfe Befinden sich auf der Gerner-Brücke?</h1>
+            <h1>Wieviele Tigerköpfe Befinden <br> sich auf der Gerner-Brücke?</h1>
             <div>
                 <input type="number" name="code5" id="code5" v-model="code5"
                     style="height: 35px; width: 130px; margin-top: 5px;">
@@ -123,7 +128,7 @@
         </div>
 
         <div id="Frage" v-if="Panel10">
-            <h1 style="margin-bottom: 15px;">Was hat Samuel für ein Plakat in seinem Zimmer hängen?</h1>
+            <h1 style="margin-bottom: 15px;">Was hat Samuel für ein Plakat <br> in seinem Zimmer hängen?</h1>
             <div>
                 <button type="button" class="btn btn-primary" style="margin-right: 10px;">Auto</button>
                 <button type="button" class="btn btn-primary" @click="Frage5">FC Bayern</button>
@@ -159,7 +164,7 @@
         </div>
 
         <div id="code" v-if="Panel13">
-            <h1>Zähle am rechten Teil der Nordseite die Schneeflocken!</h1>
+            <h1>Zähle am rechten Teil der <br> Nordseite die Schneeflocken!</h1>
             <img src="schatzsucheSchule.PNG" alt="baum" width="800" style="margin:15px ;">
             <div>
                 <input type="number" name="code7" id="code7" v-model="code7"
@@ -170,7 +175,7 @@
         </div>
 
         <div id="Frage" v-if="Panel14">
-            <h1 style="margin-bottom: 15px;">Wie Schreibt man den Namen meiner Schwester?</h1>
+            <h1 style="margin-bottom: 15px;">Wie Schreibt man den <br> Namen meiner Schwester?</h1>
             <div>
                 <button type="button" class="btn btn-primary" style="margin-right: 10px;">Lilly</button>
                 <button type="button" class="btn btn-primary" @click="Frage7">Lilli</button>
