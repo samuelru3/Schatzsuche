@@ -205,7 +205,7 @@ const SchatzApp = {
 
         ende3() {
             this.endPanel3 = false;
-            this.endPanel1 = true;
+            this.start1 = true;
             this.speichern();
         },
 

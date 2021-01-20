@@ -4,6 +4,9 @@ body{
     text-align: center;
     background-image: url("Schatzkarte2.jpg");
 }
+h1{
+    margin-top: 30px;
+}
 
 h1,h2,h6{
     color: rgb(224, 131, 17);
