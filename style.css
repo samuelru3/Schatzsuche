@@ -2,11 +2,15 @@ body{
     padding-top: 20px;
     background-color: blue;
     text-align: center;
+    background-image: url("Schatzkarte2.jpg");
 }
 
 h1,h2,h6{
-    color: white;
+    color: rgb(224, 131, 17);
 }
 h3{
-    color: wheat;
+    color: rgb(194, 143, 48);
+}
+button{
+    background-color: green;
 }

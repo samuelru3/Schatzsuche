@@ -51,6 +51,7 @@ const SchatzApp = {
         start() {
             this.start1 = false;
             this.Panel1 = true;
+            this.speichern();
         },
 
         ueberpruefen1() {
@@ -59,7 +60,7 @@ const SchatzApp = {
                 this.Panel
                 this.Panel1 = false;
                 this.Panel2 = true;
-
+                this.speichern();
             } else {
                 console.log("nicht");
             }
@@ -68,6 +69,7 @@ const SchatzApp = {
         Frage1() {
             this.Panel2 = false;
             this.Panel3 = true;
+            this.speichern();
         },
 
         ueberpruefen2() {
@@ -75,6 +77,7 @@ const SchatzApp = {
                 console.log("5");
                 this.Panel3 = false;
                 this.Panel4 = true;
+                this.speichern();
             } else {
                 console.log("nicht");
             }
@@ -83,6 +86,7 @@ const SchatzApp = {
         Frage2() {
             this.Panel4 = false;
             this.Panel5 = true;
+            this.speichern();
         },
 
         ueberpruefen3() {
@@ -90,6 +94,7 @@ const SchatzApp = {
                 console.log("35");
                 this.Panel5 = false;
                 this.Panel6 = true;
+                this.speichern();
             } else {
                 console.log("nicht");
             }
@@ -98,6 +103,7 @@ const SchatzApp = {
         Frage3() {
             this.Panel6 = false;
             this.Panel7 = true;
+            this.speichern();
         },
 
         ueberpruefen4() {
@@ -105,6 +111,7 @@ const SchatzApp = {
                 console.log("216");
                 this.Panel7 = false;
                 this.Panel8 = true;
+                this.speichern();
             } else {
                 console.log("nicht");
             }
@@ -113,6 +120,7 @@ const SchatzApp = {
         Frage4() {
             this.Panel8 = false;
             this.Panel9 = true;
+            this.speichern();
         },
 
         ueberpruefen5() {
@@ -120,6 +128,7 @@ const SchatzApp = {
                 console.log("2");
                 this.Panel9 = false;
                 this.Panel10 = true;
+                this.speichern();
             } else {
                 console.log("nicht");
             }
@@ -128,6 +137,7 @@ const SchatzApp = {
         Frage5() {
             this.Panel10 = false;
             this.Panel11 = true;
+            this.speichern();
         },
 
         ueberpruefen6() {
@@ -135,6 +145,7 @@ const SchatzApp = {
                 console.log("16");
                 this.Panel11 = false;
                 this.Panel12 = true;
+                this.speichern();
             } else {
                 console.log("nicht");
             }
@@ -143,6 +154,7 @@ const SchatzApp = {
         Frage6() {
             this.Panel12 = false;
             this.Panel13 = true;
+            this.speichern();
         },
 
         ueberpruefen7() {
@@ -150,6 +162,7 @@ const SchatzApp = {
                 console.log("7");
                 this.Panel13 = false;
                 this.Panel14 = true;
+                this.speichern();
             } else {
                 console.log("nicht");
             }
@@ -158,6 +171,7 @@ const SchatzApp = {
         Frage7() {
             this.Panel14 = false;
             this.Panel15 = true;
+            this.speichern();
         },
 
         ueberpruefen8() {
@@ -165,6 +179,7 @@ const SchatzApp = {
                 console.log("21");
                 this.Panel15 = false;
                 this.Panel16 = true;
+                this.speichern();
             } else {
                 console.log("nicht");
             }
@@ -173,22 +188,48 @@ const SchatzApp = {
         Frage8() {
             this.Panel16 = false;
             this.endPanel1 = true;
+            this.speichern();
         },
 
         ende1() {
             this.endPanel1 = false;
             this.endPanel2 = true;
+            this.speichern();
         },
 
         ende2() {
             this.endPanel2 = false;
             this.endPanel3 = true;
+            this.speichern();
         },
 
         ende3() {
             this.endPanel3 = false;
             this.endPanel1 = true;
+            this.speichern();
         },
+
+        speichern() {
+            // Komplettes Array mit Pokemons im 'localStorage' Speichern
+            console.log("Speichern");
+            const text = JSON.stringify(this.pokemonList);
+            localStorage.setItem('schatzsuche', text)
+            console.log(text);
+        },
+
+        laden() {
+            if (localStorage.getItem('schatzsuche')) {
+                let dataString = localStorage.getItem('schatzsuche');
+                this.pokemonList = JSON.parse(dataString);
+                console.log("Laden");
+            } else {
+                this.pokemonList = [];
+            }
+        },
+    },
+    mounted() {
+        //Persistent gespeichertre Daten Laden
+        this.laden();
     }
 };
 Vue.createApp(SchatzApp).mount('#schatz-app');
