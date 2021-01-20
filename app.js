@@ -90,8 +90,8 @@ const SchatzApp = {
         },
 
         ueberpruefen3() {
-            if (this.code3 == 35) {
-                console.log("35");
+            if (this.code3 == 80) {
+                console.log("80");
                 this.Panel5 = false;
                 this.Panel6 = true;
                 this.speichern();
